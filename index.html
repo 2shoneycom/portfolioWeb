@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Entrance</title>
+        <meta charset="utf-8">
+        <style>
+        /*전체 배경*/
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        div.body {  
+            background-image:url("background.avif");
+            background-size: contain;
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /*가운데 메인 칸*/
+        div.main {  
+            background-color: aqua;
+            width: 800px;
+            height: 600px;
+            margin-top: 150px;
+        }
+        #left {
+            background-color: yellow;
+            width: 400px;
+            height: 400px;
+            float: left;
+        }
+        #right {
+            background-color: blue;
+            width: 400px;
+            height: 400px;
+            float: left;
+        }
+
+        /*이름 공간*/
+        div.name {
+            background-color: darkred;
+            width: 800px;
+            height: 200px;
+        }
+        div.name * {
+            display: inline-block;
+            background-color: blanchedalmond;
+            margin-top: 60px;
+        }
+
+        /*알고리즘*/
+        div.algorithm {
+            background-color: aquamarine;
+            width: 400px;
+            height: 200px;
+        }
+        div.algorithm * {
+            display: inline-block;
+        }
+
+        /*유니티 프로젝트*/
+        div.unity {
+            background-color: purple;
+            width: 400px;
+            height: 200px;
+            text-align: right;
+        }
+        div.unity * {
+            display: inline-block;
+        }
+
+        /*연구*/
+        div.studies {
+            background-color: pink;
+            width: 400px;
+            height: 200px;
+        }
+        div.studies * {
+            display: inline-block;
+        }
+
+        /*기타*/
+        div.ect {
+            background-color: navy;
+            width: 400px;
+            height: 200px;
+            text-align: right;
+        }
+        div.ect * {
+            display: inline-block;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="body">
+            <div class="main">
+                <div class="name">
+                    <h1>이 승 헌</h1>
+                </div><!--
+                --><div id="left">
+                    <div class="algorithm">
+                        <h1>알고리즘</h1>
+                    </div>
+                    <div class="studies">
+                        <h1>연구</h1>
+                    </div>
+                </div><!--
+                --><div id="right">
+                    <div class="unity">
+                        <h1>유니티</h1>
+                    </div>
+                    <div class="ect">
+                        <h1>기타</h1>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
