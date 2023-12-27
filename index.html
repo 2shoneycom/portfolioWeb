@@ -2,38 +2,22 @@
 <html>
     <head>
         <title>Welcome!</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
         <!--<meta charset="utf-8">-->
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-            }
-            body {
-                height: 900px;
-            }
-
-            #header {
-                height: 90px;
-                background-color: white;
-                border-bottom: 1.5px solid black;
-            }
-
-            #bullet_game {
-                height: 810px;
-                text-align: center;
-                background-color: rgb(251, 248, 241);
-            }
-            #bullet_game img[src="character.png"] {
-                width: 70px;
-                height: 70px;
-                margin-top: 300px;
-            }
-        </style>
     </head>
     <body>
-        <div id = "header">
-
-        </div>
+        <!--left top menu button-->
+        <a class="menu">menu</a>
+        <!--hover menu, then header appear-->
+        <header>
+            <div class="inner_header">
+                <ul>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="pages.html">PAGES</a></li>
+                </ul>
+            </div>
+        </header>
+        <!--game zone-->
         <div id = "bullet_game">
             <img src="character.png">
             <p>click to start</p>
