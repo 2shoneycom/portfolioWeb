@@ -10,6 +10,12 @@ a {
     text-decoration: none;
     color: black;
 }
+span.regular {
+    font-size: 10px;
+}
+span.quote {
+    font-family: Georgia;
+}
 
 header {
     width: 100%;
@@ -57,4 +63,49 @@ header {
 }
 .category_part > ul > li > a {
     font-size: 14px;
+}
+
+#articles {
+    width: 1200px; height: 1000px; margin: 30px auto 0px;
+}
+#articles div.section1_articles {
+    float: left;
+    width: 680px; height: 680px; margin: 0px 20px 20px 0px;
+}
+#articles div.section1_articles .head_article {
+    width: 680px; height: 500px;
+    background-image: url(resources/sample_image.jpg);
+    position: relative;
+}
+#articles div.section1_articles .head_article > div {
+    width: 640px; height: 150px; padding: 20px;
+    position: absolute; left: 0px; bottom: 0px;
+}
+#articles div.section1_articles .head_article > div h2 {
+    color: white; line-height: 50px;
+}
+#articles div.section1_articles .head_article > div > span.regular {
+    color: white;
+}
+#articles div.section1_articles .head_article > div > span.quote {
+    color: white; line-height: 50px;
+}
+#articles div.section1_articles .below_article {
+    float: left;
+    width: calc(210px); height: 150px; margin-right: 25px;
+    border-bottom: 1px lightgray solid;
+}
+#articles div.section1_articles .below_article:last-child {
+    margin-right: 0px;
+}
+
+#articles div.section2_articles {
+    float: left;
+    width: 200px; height: 680px; margin: 0px 10px 20px 10px;
+    background-color: bisque;
+}
+#articles div.section3_articles {
+    float: left;
+    width: 260px; height: 680px; margin: 0px 0px 20px 20px;
+    background-color: bisque;
 }
