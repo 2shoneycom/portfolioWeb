@@ -11,10 +11,16 @@ a {
     color: black;
 }
 span.regular {
-    font-size: 10px;
+    font-size: 10px; line-height: 20px;
 }
 span.quote {
-    font-family: Georgia;
+    font-family: Georgia; line-height: 50px;
+}
+span.category {
+    color: red;
+}
+h2 {
+    line-height: 50px;
 }
 
 header {
@@ -60,6 +66,7 @@ header {
 }
 .category_part > ul > li:hover {
     border-bottom: 2px red groove;
+    cursor: pointer;
 }
 .category_part > ul > li > a {
     font-size: 14px;
@@ -81,18 +88,18 @@ header {
     width: 640px; height: 150px; padding: 20px;
     position: absolute; left: 0px; bottom: 0px;
 }
-#articles div.section1_articles .head_article > div h2 {
-    color: white; line-height: 50px;
+#articles div.section1_articles .head_article > div > h2 {
+    color: white;
 }
 #articles div.section1_articles .head_article > div > span.regular {
     color: white;
 }
 #articles div.section1_articles .head_article > div > span.quote {
-    color: white; line-height: 50px;
+    color: white;
 }
 #articles div.section1_articles .below_article {
     float: left;
-    width: calc(210px); height: 150px; margin-right: 25px;
+    width: calc(210px); height: 130px; margin-right: 25px; padding-top: 20px;
     border-bottom: 1px lightgray solid;
 }
 #articles div.section1_articles .below_article:last-child {
@@ -102,10 +109,22 @@ header {
 #articles div.section2_articles {
     float: left;
     width: 200px; height: 680px; margin: 0px 10px 20px 10px;
-    background-color: bisque;
 }
+#articles div.section2_articles .side_article {
+    width: 200px; height: 300px;
+    border-bottom: 1px lightgray solid;
+}
+
 #articles div.section3_articles {
     float: left;
     width: 260px; height: 680px; margin: 0px 0px 20px 20px;
-    background-color: bisque;
+}
+#articles div.section3_articles .latest_news {
+    width: 260px; height: 600px;
+    border-top: 5px black solid;
+}
+#articles div.section3_articles .latest_news div.content_latest_news {
+    width: 230px; height: auto; padding: 15px 15px;
+    margin: 8px 0px;
+    background-color: lightgray;
 }
